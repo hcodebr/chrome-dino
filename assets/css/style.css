@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  display: flex;
+  font-size: 1.5rem;
+  font-family: "VT323", monospace;
+  color: rgb(190, 190, 190);
+  align-items: center;
+  justify-content: center;
+}
+
+#dino {
+  width: 44px;
+  height: 49px;
+  background: url("../images/dino.png") no-repeat;
+  background-position-x: -847px;
+}
+#dino.run {
+  background: url("../images/dino.png") no-repeat;
+  animation: moveX 0.5s infinite;
+}
+
+@keyframes moveX {
+  0% {
+    background-position-x: -847px;
+  }
+  33% {
+    background-position-x: -892px;
+  }
+  66% {
+    background-position-x: -936px;
+  }
+  100% {
+    background-position-x: -980px;
+  }
+}
